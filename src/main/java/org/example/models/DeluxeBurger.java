@@ -6,7 +6,7 @@ public class DeluxeBurger extends Hamburger {
     private String drink;
 
     public DeluxeBurger() {
-        super("DeluxeBurger", "double", 19.10, "pufidik");
+        super("DeluxeBurger", "double", 19.10, "normal");
         this.cips = "CURVY";
         this.drink = "COKE";
     }
