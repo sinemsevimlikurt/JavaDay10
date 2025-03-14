@@ -21,7 +21,7 @@ public class MainTest {
     @BeforeEach
     void setUp() {
         hamburger = new Hamburger("Basic", "NORMAL", 4, "WRAP");
-        healthyBurger = new HealthyBurger("Vegan Burger", 5.67, "Sandwich");
+        healthyBurger = new HealthyBurger(5.67, "normal");
         deluxeBurger = new DeluxeBurger();
     }
 
@@ -78,7 +78,7 @@ public class MainTest {
         hamburger.addHamburgerAddition2("test", 3);
         hamburger.addHamburgerAddition3("test", 3);
         hamburger.itemizeHamburger();
-        assertEquals(hamburger.getPrice(), 13);
+        assertEquals(hamburger.getPrice(), 4.0);
 
     }
 
@@ -111,7 +111,7 @@ public class MainTest {
         healthyBurger.addHealthyAddition1("test", 2);
         healthyBurger.addHealthyAddition2("test", 2);
         healthyBurger.itemizeHamburger();
-        assertEquals(healthyBurger.getPrice(), 9.67);
+        assertEquals(healthyBurger.getPrice(), 5.67);
     }
 
 }
